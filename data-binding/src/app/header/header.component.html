@@ -1,0 +1,61 @@
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Curso de Angular 2 | loiane.training</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Estudos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://getbootstrap.com/" target="_blank" data-toggle="popover"
+              title="Acessar a documentação do bootstrap" data-placement="right"
+              data-content="Some content inside the popover">bootstrap</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/juniors0101" target="_blank" data-toggle="popover"
+              title="Acessar meu GitHub" data-placement="right" data-content="Some content inside the popover">Meu
+              GitHub</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+  <div class="container">
+    <!--app-data-binding></app-data-binding-->
+
+    <app-meu-form></app-meu-form>
+
+    <app-curso [nome]="nomeDoCurso"></app-curso>
+
+  </div>
+</main>
+
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Coloque o conteúdo do rodapé fixo aqui.</span>
+  </div>
+</footer>
+
+
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
