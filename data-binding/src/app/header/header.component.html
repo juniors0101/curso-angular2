@@ -21,7 +21,7 @@
               data-content="Some content inside the popover">bootstrap</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://github.com/juniors0101" target="_blank" data-toggle="popover"
+            <a class="nav-link" type="button" href="https://github.com/juniors0101" target="_blank" data-toggle="popover"
               title="Acessar meu GitHub" data-placement="right" data-content="Some content inside the popover">Meu
               GitHub</a>
           </li>
@@ -29,6 +29,7 @@
             <a class="nav-link disabled">Disabled</a>
           </li>
         </ul>
+
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Pesquisar</button>
@@ -43,9 +44,13 @@
   <div class="container">
     <!--app-data-binding></app-data-binding-->
 
-    <app-meu-form></app-meu-form>
+    <!--app-meu-form></app-meu-form-->
 
-    <app-curso [nome]="nomeDoCurso"></app-curso>
+    <!--app-curso [nome]="nomeDoCurso"></app-curso-->
+    
+    <!--contador [valor]="valorInicial" (mudouValor)="onMudouValor($event)"></contador-->
+
+    <app-ciclo></app-ciclo>
 
   </div>
 </main>

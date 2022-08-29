@@ -8,6 +8,8 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { HeaderComponent } from './header/header.component';
 import { MeuFormModule } from './meu-form/meu-form.module';
 import { InputPropertyComponent } from './input-property/input-property.component';
+import { OutputPropertyComponent } from './output-property/output-property.component';
+import { CicloComponent } from './ciclo/ciclo.component';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { InputPropertyComponent } from './input-property/input-property.componen
     AppComponent,
     DataBindingComponent,
     HeaderComponent,
-    InputPropertyComponent
+    InputPropertyComponent,
+    OutputPropertyComponent,
+    CicloComponent
   ],
   imports: [
   BrowserModule,

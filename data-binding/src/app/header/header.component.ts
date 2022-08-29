@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  nomeDoCurso: string = 'Estou fazendo meu curso de angularJS';
+  nomeDoCurso: string = 'ESTOU FAZENDO MEU PRIMEIRO CURSO DE ANGULAR JS, E TESTANDO VARIAS COISAS';
+
+  valorInicial = 15;
+
+  onMudouValor(evento: any){
+    console.log(evento.novoValor);
+  }
 
   constructor() { }
 
