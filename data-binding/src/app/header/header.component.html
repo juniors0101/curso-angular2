@@ -44,13 +44,15 @@
   <div class="container">
     <!--app-data-binding></app-data-binding-->
 
-    <!--app-meu-form></app-meu-form-->
+    <app-meu-form></app-meu-form>
 
-    <!--app-curso [nome]="nomeDoCurso"></app-curso-->
+    <app-curso [nome]="nomeDoCurso"></app-curso>
     
-    <!--contador [valor]="valorInicial" (mudouValor)="onMudouValor($event)"></contador-->
+    <contador [valor]="valorInicial" (mudouValor)="onMudouValor($event)"></contador>
 
-    <app-ciclo></app-ciclo>
+    <!--app-ciclo [valorInicial]="valor" *ngIf="!deletarCiclo"></app-ciclo>
+    <button (click)="mudarValor()">Mudar Valor</button>
+    <button (click)="destruirCiclo()">Deletar</button-->
 
   </div>
 </main>
